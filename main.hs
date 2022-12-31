@@ -250,10 +250,10 @@ isFinished :: State -> Bool
 isFinished s = stLevel s == listLength mazes
 
 endScreen :: Picture
-endScreen = drawString "Gra ukończona, gratulacje!"
+endScreen = drawString "Game complete, congratulations!"
 
 completedLevel :: Integer -> Picture
-completedLevel moves = drawString $ "Poziom ukończony, liczba ruchów: " ++ show moves
+completedLevel moves = drawString $ "Level complete, number of moves: " ++ show moves
 
 screenWidth, screenHeight :: Integer
 screenWidth  = 41
